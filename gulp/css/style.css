@@ -1,0 +1,306 @@
+@charset "UTF-8";
+
+/*Обнуление*/
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+@font-face {
+  font-family: "MuseoModerno";
+  font-display: swap;
+  src: url("../fonts/MuseoModerno-Bold.woff") format("woff"), url("../fonts/MuseoModerno-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoModerno";
+  font-display: swap;
+  src: url("../fonts/MuseoModerno-Light.woff") format("woff"), url("../fonts/MuseoModerno-Light.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoModerno";
+  font-display: swap;
+  src: url("../fonts/MuseoModerno-Medium.woff") format("woff"), url("../fonts/MuseoModerno-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MuseoModerno";
+  font-display: swap;
+  src: url("../fonts/MuseoModerno-Regular.woff") format("woff"), url("../fonts/MuseoModerno-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-display: swap;
+  src: url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "MuseoModerno", sans-serif;
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: #C70101;
+  text-transform: uppercase;
+  padding: 7px;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+}
+
+.btn--small {
+  margin-top: 7px;
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.btn--big {
+  padding: 13px 28px;
+}
+
+.no-webp .promo{
+  background: url("../img/header_background.png") center center/cover no-repeat; }
+
+.promo {
+  min-height: 650px;
+  padding-top: 22px;
+  padding-bottom: 93px;
+}
+
+.promo__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.promo__logo {
+  width: 250px;
+}
+
+.promo__logo img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.promo__official {
+  font-weight: 500;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+}
+
+.promo__official p {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.promo__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.promo__tel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: right;
+  color: #fff;
+}
+
+.promo__tel:hover {
+  color: #C70101;
+}
+
+.promo__wrapper {
+  margin-top: 91px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 42px;
+  text-transform: uppercase;
+}
+
+.promo__subtitle {
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.promo__icons {
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 420px;
+}
+
+.promo__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 65px;
+}
+
+.promo__item img {
+  margin-bottom: 20px;
+}
+
+.promo__text {
+  font-weight: 500;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.promo__text a {
+  text-decoration: underline;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.webp .promo{ background: url(../img/header_background.webp) center center/cover no-repeat; }
