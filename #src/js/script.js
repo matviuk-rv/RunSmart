@@ -17,3 +17,9 @@ document.querySelector('body').classList.add('no-webp');
 }
 });
 // ------------------
+var swiper = new Swiper(".slider__block", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
