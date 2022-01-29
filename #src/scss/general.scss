@@ -277,7 +277,7 @@
     transform: skewX(-30deg);
     cursor: pointer;
     transition: 0.8s all ease;
-    &--active{
+    &--active {
       background-color: $main_color;
       color: $white;
       border: none;
@@ -299,10 +299,10 @@
   &__content {
     margin-top: 57px;
     display: none;
-    grid-template-columns: repeat(auto-fit,300px);
+    grid-template-columns: repeat(auto-fit, 300px);
     gap: 20px;
     justify-items: start;
-    &--active{
+    &--active {
       display: grid;
     }
   }
@@ -336,7 +336,8 @@
       text-align: center;
       line-height: 22px;
     }
-    &__link, &__back-link {
+    &__link,
+    &__back-link {
       margin-top: 10px;
       font-weight: 500;
       font-size: 14px;
@@ -375,24 +376,24 @@
       height: 1px;
     }
 
-    &__card{
+    &__card {
       display: flex;
-      width:calc(200% + 40px);
+      width: calc(200% + 40px);
     }
     &__front-side {
-      width:50%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
       transform: translateX(-100%);
       transition: 0.7s all;
-        &--active{
-          transform: translateX(0%); 
+      &--active {
+        transform: translateX(0%);
       }
     }
     &__back-side {
-      width:50%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -400,9 +401,9 @@
       padding: 16px 15px 0px 15px;
       transform: translateX(0%);
       transition: 0.7s all;
-        &--active{
-          transform: translateX(-100%);
-        }
+      &--active {
+        transform: translateX(-100%);
+      }
     }
     &__list {
       li {
@@ -423,6 +424,78 @@
           height: 9px;
           background-color: $main_color;
         }
+      }
+    }
+  }
+}
+//////////////////////////////
+.feedback {
+  padding-bottom: 50px;
+  &__title {
+    font-family: "MuseoModerno";
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: $black;
+    margin-bottom: 60px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 60px;
+  }
+
+  &__image {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 60px;
+    border-radius: 50%;
+    img {
+      width: 169px;
+      height: 169px;
+      object-fit: cover;
+    }
+  }
+
+  &__contents {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  &__heading {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: $black;
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    color: #646464;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    p{
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 0px;
       }
     }
   }

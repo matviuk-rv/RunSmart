@@ -755,6 +755,107 @@ h6 {
   background-color: #C70101;
 }
 
+.feedback {
+  padding-bottom: 50px;
+}
+
+.feedback__title {
+  font-family: "MuseoModerno";
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #0D0D0D;
+  margin-bottom: 60px;
+}
+
+.feedback__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.feedback__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.feedback__image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-right: 60px;
+  border-radius: 50%;
+}
+
+.feedback__image img {
+  width: 169px;
+  height: 169px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.feedback__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.feedback__heading {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  color: #0D0D0D;
+}
+
+.feedback__subtitle {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  color: #646464;
+  margin-bottom: 10px;
+}
+
+.feedback__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #0D0D0D;
+}
+
+.feedback__text p {
+  margin-bottom: 15px;
+}
+
+.feedback__text p:last-child {
+  margin-bottom: 0px;
+}
+
 @media (max-width: 991px) {
   .container {
     padding-left: 15px;
