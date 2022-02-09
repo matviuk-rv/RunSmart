@@ -888,6 +888,8 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-shadow: 2px 2px 4px #C70101;
+          box-shadow: 2px 2px 4px #C70101;
 }
 
 .footer__adress {
@@ -951,6 +953,8 @@ h6 {
   min-height: 400px;
   padding: 40px;
   background: #f2f2f2;
+  -webkit-box-shadow: 1px 1px 15px #0D0D0D;
+          box-shadow: 1px 1px 15px #0D0D0D;
 }
 
 .modal__close {

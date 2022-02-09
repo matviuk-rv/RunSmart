@@ -70,5 +70,79 @@ var swiper = new Swiper(".slider__block", {
          });
       });
 
+      $('#communication__form').validate({
+         rules: {
+            user_name: {
+               required: true,
+               minlength: 2
+            },
+            user_phone: "required",
+            user_email: {
+               required: true,
+               email: true
+            }  
+         },
+         messages: {
+            user_name: {
+               required: "Пожалуйста, введите свое имя",
+               minlength: jQuery.validator.format("Не менее {0} символа!")
+             },
+            user_phone: "Пожалуйста, введите свой номер телефона",
+            user_email: {
+               required: "Пожалуйста, введите свой email",
+               email: "Неправильно введен адрес почты"
+            } 
+         } 
+      });
+      $('#consultation form').validate({
+         rules: {
+            user_name: {
+               required: true,
+               minlength: 2
+            },
+            user_phone: "required",
+            user_email: {
+               required: true,
+               email: true
+            }  
+         },
+         messages: {
+            user_name: {
+               required: "Пожалуйста, введите свое имя",
+               minlength: jQuery.validator.format("Не менее {0} символа!")
+             },
+            user_phone: "Пожалуйста, введите свой номер телефона",
+            user_email: {
+               required: "Пожалуйста, введите свой email",
+               email: "Неправильно введен адрес почты"
+            } 
+         } 
+      });
+      $('#order form').validate(
+         {
+            rules: {
+               user_name: {
+                  required: true,
+                  minlength: 2
+               },
+               user_phone: "required",
+               user_email: {
+                  required: true,
+                  email: true
+               }  
+            },
+            messages: {
+               user_name: {
+                  required: "Пожалуйста, введите свое имя",
+                  minlength: jQuery.validator.format("Не менее {0} символа!")
+                },
+               user_phone: "Пожалуйста, введите свой номер телефона",
+               user_email: {
+                  required: "Пожалуйста, введите свой email",
+                  email: "Неправильно введен адрес почты"
+               } 
+            } 
+         }
+      );
    });
 })(jQuery);
