@@ -168,6 +168,15 @@ h6 {
   width: 260px;
 }
 
+.form .error {
+  border: 1px solid #C70101;
+}
+
+.form label.error {
+  border: none;
+  color: #C70101;
+}
+
 .form input[type=text],
 .form input[type=tel],
 .form input[type=email] {
@@ -179,16 +188,18 @@ h6 {
   line-height: 66px;
   color: #4b4b4b;
   border-radius: 5px;
-}
-
-.form input[type=tel] {
-  margin: 12px 0px;
+  margin-top: 6px;
+  margin-bottom: 8px;
 }
 
 .form .btn--big {
   width: 100%;
   margin-top: 17px;
   font-size: 15px;
+}
+
+.form-white label.error {
+  color: #fff;
 }
 
 .no-webp .promo{

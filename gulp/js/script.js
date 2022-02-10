@@ -144,5 +144,7 @@ var swiper = new Swiper(".slider__block", {
             } 
          }
       );
+
+      $('input[name=user_phone]').mask("+7 (999) 999-99-99");
    });
 })(jQuery);
