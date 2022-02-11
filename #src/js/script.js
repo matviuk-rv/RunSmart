@@ -146,5 +146,20 @@ var swiper = new Swiper(".slider__block", {
       );
 
       $('input[name=user_phone]').mask("+7 (999) 999-99-99");
+
+      $("#communication__form, form").submit(function(evt) {
+         evt.preventDefault();
+         $.ajax({
+            // type: "POST",
+            // url: "mailer/smart.php",
+            // data: $(this).serialize()
+         }).done(function(){
+            $(this).find("input").val("");
+            $("#consultation, #order").fadeOut();
+            $("#thanks").fadeIn("slow");
+            $('form').trigger("reset");
+         });
+         return false;
+      });
    });
 })(jQuery);
