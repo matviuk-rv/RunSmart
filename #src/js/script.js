@@ -147,17 +147,31 @@ var swiper = new Swiper(".slider__block", {
 
       $('input[name=user_phone]').mask("+7 (999) 999-99-99");
 
-      $("#communication__form, form").submit(function(evt) {
-         evt.preventDefault();
+      $('form').submit(function(e) {
+         e.preventDefault();
          $.ajax({
-            // type: "POST",
-            // url: "mailer/smart.php",
-            // data: $(this).serialize()
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
          }).done(function(){
             $(this).find("input").val("");
-            $("#consultation, #order").fadeOut();
-            $("#thanks").fadeIn("slow");
-            $('form').trigger("reset");
+            $('#consultation, #order').fadeOut('slow');
+            $('#thanks').fadeIn('slow');
+            $('form').trigger('reset');
+         });
+         return false;
+      });
+
+      $('#communication__form').submit(function(e) {
+         e.preventDefault();
+         $.ajax({
+            type: "POST",
+            url: "mailer/smart.php",
+            data: $(this).serialize()
+         }).done(function() {
+            $(this).find('input').val("");
+            $('.popup, #thanks').fadeIn('slow');
+            $('form').trigger('reset');
          });
          return false;
       });
