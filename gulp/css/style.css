@@ -197,13 +197,13 @@ html {
 }
 
 .fadeInLeft {
-  -webkit-animation: fadeInLeft 2s;
-          animation: fadeInLeft 2s;
+  -webkit-animation: fadeInLeft;
+          animation: fadeInLeft;
 }
 
 .fadeInRight {
-  -webkit-animation: fadeInRight 2s;
-          animation: fadeInRight 2s;
+  -webkit-animation: fadeInRight;
+          animation: fadeInRight;
 }
 
 .container {
@@ -681,8 +681,8 @@ html {
 .catalog .catalog-item__img img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .catalog .catalog-item__title {
@@ -946,6 +946,12 @@ html {
   position: relative;
 }
 
+.footer__map iframe {
+  width: 100%;
+  height: 630px;
+  border: none;
+}
+
 .footer__info {
   position: absolute;
   top: 0;
@@ -1011,6 +1017,16 @@ html {
           justify-content: center;
   border-radius: 50%;
   border: 3px solid #fff;
+}
+
+.footer__social-item:hover {
+  border: 3px solid #C70101;
+  background-color: #fff;
+}
+
+.footer__social-item:hover img {
+  -webkit-filter: invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
+          filter: invert(95%) sepia(97%) saturate(14%) hue-rotate(213deg) brightness(104%) contrast(104%);
 }
 
 .popup {
@@ -1103,9 +1119,9 @@ html {
 }
 
 .up__img:hover {
-  -webkit-transform: scale(1.3);
-      -ms-transform: scale(1.3);
-          transform: scale(1.3);
+  -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+          transform: scale(1.5);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
