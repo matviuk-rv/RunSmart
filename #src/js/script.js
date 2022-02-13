@@ -183,5 +183,7 @@ var swiper = new Swiper(".slider__block", {
             $('.up').fadeOut();
          }
       });
+
+      new WOW().init();
    });
 })(jQuery);
