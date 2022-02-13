@@ -151,7 +151,7 @@ var swiper = new Swiper(".slider__block", {
          e.preventDefault();
          $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "https://echo.htmlacademy.ru/",
             data: $(this).serialize()
          }).done(function(){
             $(this).find("input").val("");
@@ -166,7 +166,7 @@ var swiper = new Swiper(".slider__block", {
          e.preventDefault();
          $.ajax({
             type: "POST",
-            url: "mailer/smart.php",
+            url: "https://echo.htmlacademy.ru/",
             data: $(this).serialize()
          }).done(function() {
             $(this).find('input').val("");
@@ -174,6 +174,14 @@ var swiper = new Swiper(".slider__block", {
             $('form').trigger('reset');
          });
          return false;
+      });
+
+      $(window).scroll(function(){
+         if ($(this).scrollTop()>1000) {
+            $('.up').fadeIn();
+         } else {
+            $('.up').fadeOut();
+         }
       });
    });
 })(jQuery);
