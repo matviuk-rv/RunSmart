@@ -252,9 +252,9 @@
 }
 .swiper-slide img {
   display: block;
-  width: 100%;
+  width: 750px;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .swiper-button-next:after,
 .swiper-button-prev:after {
@@ -327,7 +327,7 @@
     flex-direction: column;
     overflow: hidden;
     &__img {
-      width: 140px;
+      width: 240px;
       height: 200px;
       img {
         width: 100%;
@@ -389,7 +389,7 @@
 
     &__card {
       display: flex;
-      width: calc(200% + 40px);
+      width: calc(200% + 20px);
     }
     &__front-side {
       width: 50%;
@@ -399,6 +399,7 @@
       align-items: center;
       transform: translateX(-100%);
       transition: 0.7s all;
+      padding: 10px;
       &--active {
         transform: translateX(0%);
       }
@@ -637,6 +638,7 @@
   cursor: pointer;
   display: none;
   position: fixed;
+  z-index: 3;
   bottom: 50px;
   right: 50px;
   width: 45px;
