@@ -1735,6 +1735,38 @@ html {
     width: 45px;
     height: 45px;
   }
+
+  .modal {
+    width: 270px;
+    min-height: 100px;
+    padding: 15px;
+  }
+
+  .modal__close {
+    position: absolute;
+    top: -14px;
+    right: -30px;
+    font-size: 50px;
+    line-height: 50px;
+    color: #C70101;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .modal__title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .modal__subtitle {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .modal--mini {
+    padding: 40px 40px 10px;
+    min-height: 120px;
+  }
 }
 
 .webp .promo{ background: url(../img/header_background.webp) center center/cover no-repeat; }
